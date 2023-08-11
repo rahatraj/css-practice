@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quaries in css</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: slategray;
+            padding: 0;
+            margin: 0;
+        }
+        #wrapper{
+            border:0px solid black;
+            width: 1000px;
+            background:white;
+            padding: -3;
+            margin: 0 auto;
+        }
+        #header{
+            background: crimson;
+            height: 70px;
+            color: white;
+        }
+        #header h1{
+            padding: 20px 0 0 20px;
+            text-align: center;
+        }
+        #menu{
+            background: lightsalmon;
+        }
+        #menu ul{
+            margin: 0;
+            padding: 0;
+        }
+        #menu li{
+            display: inline-block;
+        }
+        #menu li a{
+            display: block;
+            padding: 10px 14px;
+            text-decoration: none;
+            color:black;
+        }
+        #menu li a:hover{
+            background: crimson;
+            color: white;
+        }
+        #content{
+            width: 800px;
+            float: left;
+            min-height: 500px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        #sidebar{
+            background: lightblue;
+            width: 200px;
+            float: right;
+            min-height: 500px;
+        }
+        #sidebar li a{
+            text-decoration: none;
+            color: black;
+        }
+        #footer{
+            background: lightsalmon;
+            clear: both;
+            padding: 5px 10px;
+            text-align: center;
+        }
+        @media screen and (max-width:1020px) {
+            #wrapper{
+                width: 800px;
+            }
+            #content{
+                width: 80%;
+            }
+            #sidebar{
+                width: 16%;
+            }
+        }
+        @media screen and (max-width:810px) {
+            #wrapper{
+                width: 500px;
+            }
+            #content{
+                width: 65%;
+            }
+            #sidebar{
+                width: 35%;
+            }
+        }
+        @media screen and (max-width:510px) {
+            #wrapper{
+                width: auto;
+            }
+            #content{
+                width:100%;
+                float: none;
+            }
+            #sidebar{
+                width:100%;
+                float: none;
+            }
+            #header h1{
+            padding: 20px 0 0 20px;
+            text-align: center;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Technology with Rahat</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact us</a> </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Design Basic Layout </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, beatae debitis soluta cumque facilis natus
+                blanditiis rem quaerat, illo reiciendis autem dolorem! Nostrum ex vitae est atque maxime inventore
+                expedita nobis officiis sit officia ullam repellat quis unde provident maiores consequatur vel magni
+                obcaecati, recusandae. Numquam ipsam doloremque tenetur quam, a aut praesentium repudiandae, distinctio
+                facere porro velit ab nesciunt, temporibus qui sed consequuntur quisquam aperiam!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, magnam delectus! Repudiandae
+                accusantium incidunt eum ut earum fuga perspiciatis sit quod commodi ea, quaerat, necessitatibus cumque
+                tenetur aspernatur eveniet velit vitae pariatur impedit veritatis asperiores possimus similique quos.
+                Distinctio expedita fuga odio necessitatibus hic voluptate facilis nemo? . Voluptatem voluptatibus
+                laborum similique alias velit blanditiis quod aliquam neque suscipit laudantium quo, eos repellat earum,
+                mollitia necessitatibus molestiae.</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact us</a> </li>
+            </ul>
+        </div>
+        <div id="footer">
+            TechnologyWithRahat@copyright2022
+        </div>
+    </div>
+</body>
+
+</html>
